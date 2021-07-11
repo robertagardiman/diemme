@@ -1,0 +1,55 @@
+$color-primary--accent: #FFF000;
+
+$color-neutral--darkest: #000000;
+$color-neutral--medium: #414445;
+$color-neutral--light: #e6e8e8;
+$color-neutral--lighter: #f3f3f3;
+$color-neutral--lightest: #ffffff;
+
+$color-neutral--medium-transparent: rgba(65,68,69,.8);
+$color-neutral--darker-transparent: rgba(0,0,0,.5);
+
+$colors: (
+  'primary--500': #FFF000,
+  'accent--500': #FFF000,
+  'neutral--0': #fff,
+  'neutral--50': #f3f3f3,
+  'neutral--100': #e6e8e8,
+  'neutral--800': #414445,
+  'neutral--800-darker': #414445,
+  'neutral-800-alpha': rgba(65,68,69,.8),
+  'neutral-1000': #000,
+  'neutral-1000-alpha': rgba(0,0,0,.5),
+  'disable': #E7E7E7E7
+);
+$high-contrast-colors: (
+  'primary--500': #FFF000,
+  'accent--500': black,
+  'neutral--0': #000,
+  'neutral--50': #FFF000,
+  'neutral--100': #e6e8e8,
+  'neutral--800': #fff,
+  'neutral--800-darker': #000,
+  'neutral-800-alpha': rgba(0,0,0,.8),
+  'neutral-1000': #000,
+  'neutral-1000-alpha': rgba(0,0,0,.5),
+  'disable': #000
+);
+
+$gap--xxs: 5px;
+$gap--xs: 10px;
+$gap--sm: 14px;
+$gap--md: 24px;
+$gap--lg: 44px;
+$gap--xl: 64px;
+$gap--xxl: 100px;
+
+$h1: 57px;
+$h2: 49px;
+$h3: 35px;
+$usp: 30px;
+$medium-text: 24px;
+$p: 20px;
+$label: 18px;
+
+$header-height: 85px;

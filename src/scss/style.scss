@@ -1,17 +1,36 @@
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+
+@import
+"variables",
+"mixin",
+"logo",
+"font",
+"menu",
+"header",
+"footer",
+"contatti";
+
+* {
+  font-family: "Helvetica", sans-serif;
+  color: $color-neutral--darkest;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-
-@import
-"variables";
-
+.wrapper {
+  width: 100%;
+}
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 

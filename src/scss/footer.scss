@@ -1,0 +1,35 @@
+.footer {
+  background-color: $color-neutral--darkest;
+
+  .footer__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $gap--sm 0 $gap--lg;
+  }
+
+  .menu ul {
+    li {
+      margin-left: $gap--md;
+      &:after {
+        content: '';
+        display: none;
+      }
+      a {
+        color: $color-neutral--lightest;
+      }
+    }
+  }
+
+  .footer__legals {
+    text-align: center;
+    padding: $gap--sm;
+    p, a {
+      color: $color-neutral--lightest;
+      font-size: $legals;
+      letter-spacing: 0.29px;
+      margin-bottom: $gap--xs;
+      font-family: 'Helvetica Bold', sans-serif;
+    }
+  }
+}

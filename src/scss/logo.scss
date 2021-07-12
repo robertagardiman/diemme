@@ -1,0 +1,24 @@
+.logo {
+  width: 216px;
+  height: 70px;
+  background-color: $color-primary--accent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5px 10px;
+  span {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: $color-neutral--lightest;
+    font-family: 'Helvetica Bold', sans-serif;
+  }
+  @include mobile {
+    width: 70px;
+    span {
+      display: none;
+    }
+    span.logo__mobile {
+      display: block;
+    }
+  }
+}

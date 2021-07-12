@@ -667,4 +667,5 @@ function wpml_get_code( $lang = "" ) {
 }
 
 add_filter( 'wpseo_json_ld_output', '__return_false' );
+
 ?>

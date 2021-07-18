@@ -1,8 +1,14 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: $gap--sm;
+  background-color: $color-neutral--lightest;
+  z-index: 3;
   .header__menu-trigger, .header__menu-content {
     display: none;
   }

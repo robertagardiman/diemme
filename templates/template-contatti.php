@@ -2,9 +2,9 @@
 
 <section class="contatti-wrapper">
     <div class="contatti__map">
-        <div class="map"></div>
+        <div class="map"><?php the_field('map');?></div>
         <div class="info">
-            <h3><?php the_field('nome_azienda')?></h3>
+            <h3><?php the_field('nome_azienda');?></h3>
             <span><?php the_field('indirizzo'); ?></span>
             <p>Tel. <a href="tel:<?php the_field('telefono'); ?>"><?php the_field('telefono'); ?></a></p>
             <p>Email. <a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a></p>

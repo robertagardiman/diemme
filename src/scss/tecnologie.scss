@@ -1,0 +1,123 @@
+.tech-wrapper {
+  padding: $header-height 0 $gap--sm;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Helvetica Bold', sans-serif;
+  }
+
+  .tech__item {
+    margin: $gap--xl 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:last-of-type {
+      .item__media {
+        order: 2;
+        margin-right: 0;
+        margin-left: $gap--lg;
+        .ms-nav-prev, .ms-nav-next {
+          bottom: 0;
+          top: auto;
+          right: auto;
+          position: absolute;
+          border: 2px solid $color-neutral--darkest;
+          box-shadow: none;
+          background-image: url("img/arrow-slider-prev.svg");
+          background-size: 10px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .ms-nav-next {
+          left: -85px;
+          transform: rotate(180deg);
+        }
+        .ms-nav-prev {
+          left: -145px;
+        }
+      }
+
+      .item__content {
+        text-align: right;
+        h2:after {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+
+    .bg-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: $color-neutral--medium--transparent;
+      width: 100%;
+      height: 60%;
+      z-index: -1;
+    }
+
+    .item__media {
+      width: 40%;
+      max-width: 500px;
+      margin-right: $gap--lg;
+      .ms-slide {
+        height: 500px;
+      }
+      .ms-nav-prev, .ms-nav-next {
+        bottom: 0;
+        top: auto;
+        left: auto;
+        position: absolute;
+        border: 2px solid $color-neutral--darkest;
+        box-shadow: none;
+        background-image: url("img/arrow-slider-prev.svg");
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .ms-nav-next {
+        right: -145px;
+        transform: rotate(180deg);
+      }
+      .ms-nav-prev {
+        right: -85px;
+      }
+    }
+
+    .item__content {
+      width: 40%;
+
+      h2 {
+        text-transform: uppercase;
+        font-family: 'Helvetica Bold', sans-serif;
+        letter-spacing: 1px;
+        font-size: $h4;
+        position: relative;
+        margin-bottom: $gap--sm;
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          display: block;
+          width: 30px;
+          height: 2px;
+          background-color: $color-primary--accent;
+          margin: $gap--xxs 0 $gap--sm;
+        }
+      }
+
+      p {
+        line-height: 1.2;
+      }
+    }
+  }
+}

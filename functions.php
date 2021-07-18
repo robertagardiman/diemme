@@ -108,6 +108,8 @@ function html5blank_conditional_scripts()
     }
 }
 
+wp_enqueue_script(array('jquery'), '1.0', true );
+
 // Load HTML5 Blank styles
 function html5blank_styles()
 {

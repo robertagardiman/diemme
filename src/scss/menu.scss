@@ -27,6 +27,12 @@
     text-transform: uppercase;
   }
 
+  @include tabletPortrait {
+    li a {
+      font-size: $legals;
+    }
+  }
+
   @include mobile {
     flex-flow: column;
     align-items: flex-end;

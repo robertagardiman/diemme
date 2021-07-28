@@ -1,6 +1,6 @@
 {
-  "name": "joandjoe-theme",
-  "version": "2.0.0",
+  "name": "diemme-theme",
+  "version": "1.0.0",
   "description": "Powerful shell for rapidly deploying your WordPress projects.",
   "main": "index.js",
   "scripts": {

@@ -1,0 +1,116 @@
+.work-wrapper {
+  padding: $header-height 0 $gap--sm;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Helvetica Bold', sans-serif;
+  }
+
+  .work-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $gap--xxl auto;
+    position: relative;
+    width: 100%;
+    .bg-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: $color-neutral--medium--transparent;
+      width: 100%;
+      height: 60%;
+      z-index: -1;
+    }
+    .progetti-overlay, .primaedopo-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: $color-neutral--darker-transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      opacity: 0;
+      .progetti-overlay__close, .primaedopo-overlay__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $color-primary--accent;
+        cursor: pointer;
+        background-image: url("img/close-w.svg");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: 10% 70%;
+        width: 216px;
+        height: 70px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 5px 10px;
+        margin-top: $gap--sm;
+      }
+      .overlay__content {
+        width: 60%;
+        height: 60%;
+      }
+    }
+
+    .progetti-overlay.show, .primaedopo-overlay.show {
+      opacity: 1;
+      z-index: 4;
+    }
+
+    .work__item {
+      max-width: 400px;
+      margin: 0 $gap--xl;
+      cursor: pointer;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      .item__media {
+        width: 100%;
+        height: 400px;
+        border: 2px solid $color-neutral--darkest;
+        border-bottom: 2px solid $color-primary--accent;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .item__content {
+        $content-height: 44px;
+        border: 2px solid $color-neutral--darkest;
+        padding: $gap--sm 0 $gap--sm $gap--sm;
+        height: $content-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-family: 'Helvetica Bold', sans-serif;
+          font-size: $label;
+        }
+        .icon-lens {
+          width: $content-height;
+          height: $content-height;
+          background-image: url("img/lens.svg");
+          background-size: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-left: 2px solid $color-neutral--darkest;
+        }
+      }
+    }
+  }
+
+}

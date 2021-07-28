@@ -36,5 +36,8 @@
   @include mobile {
     flex-flow: column;
     align-items: flex-end;
+    li a {
+      font-size: $label;
+    }
   }
 }

@@ -26,6 +26,12 @@
       height: 100% !important;
       overflow: hidden !important;
     }
+    .ms-view {
+      height: 100vh !important;
+      .ms-slide {
+        height: 100vh !important;
+      }
+    }
   }
   .home__heading {
     position: absolute;
@@ -68,7 +74,7 @@
   }
 
   .home-content {
-    width: 90%;
+    width: 100%;
     text-align: center;
     h2 {
       text-transform: uppercase;

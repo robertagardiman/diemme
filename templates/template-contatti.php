@@ -2,7 +2,7 @@
 
 <section class="contatti-wrapper">
     <div class="contatti__map">
-        <div class="map"><?php the_field('map');?></div>
+        <a target="_blank" href="<?php the_field('map_link');?>" class="map"><img src="<?php the_field('map');?>"></a>
         <div class="info">
             <h3><?php the_field('nome_azienda');?></h3>
             <span><?php the_field('indirizzo'); ?></span>

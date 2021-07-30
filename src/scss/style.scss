@@ -37,3 +37,9 @@ ul {
   list-style: none;
 }
 
+h1 {
+  @include mobile {
+    font-size: 22px;
+  }
+}
+

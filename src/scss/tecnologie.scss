@@ -120,4 +120,50 @@
       }
     }
   }
+  @include smallDesktop {
+    .tech__item {
+      .bg-line {
+        height: 70%;
+      }
+    }
+  }
+  @include tabletPortrait {
+    .tech__item {
+      .bg-line {
+        height: 100%;
+      }
+    }
+  }
+  @include mobile {
+    .tech__item {
+      flex-flow: column;
+      .item__media {
+        width: 90%;
+        margin: $gap--md 0 0;
+        .ms-nav-next {
+          right: 0;
+          background-color: $color-neutral--lightest;
+        }
+        .ms-nav-prev {
+          right: 60px;
+          background-color: $color-neutral--lightest;
+        }
+      }
+      .item__content {
+        width: 80%;
+        margin: $gap--md 0;
+      }
+      &:last-of-type {
+        .item__media {
+          margin: 0 0 $gap--md;
+          .ms-nav-next {
+            left: 60px;
+          }
+          .ms-nav-prev {
+            left: 0;
+          }
+        }
+      }
+    }
+  }
 }

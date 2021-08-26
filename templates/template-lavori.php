@@ -41,7 +41,7 @@
         <div class="primaedopo-overlay">
             <div class="primaedopo-overlay__close"></div>
             <div class="overlay__content">
-                <?php masterslider(5); ?>
+                <?php masterslider(6); ?>
             </div>
         </div>
     </div>

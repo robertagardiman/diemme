@@ -15,7 +15,8 @@
 "home",
 "tecnologie",
 "work",
-"contatti";
+"contatti",
+"privacy";
 
 * {
   font-family: "Helvetica", sans-serif;
@@ -27,6 +28,11 @@
 
 .wrapper {
   width: 100%;
+}
+
+.default-wrapper {
+  padding: 140px $gap--sm $gap--sm;
+  position: relative;
 }
 
 a {

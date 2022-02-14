@@ -6,7 +6,7 @@
         </div>
         <div class="home__heading">
             <h1>DIEMME</h1>
-            <a href="/i-nostri-lavori" class="button--primary">scopri i lavori</a>
+            <a href="/wp/i-nostri-lavori" class="button--primary">scopri i lavori</a>
         </div>
     </div>
     <div class="home-content">

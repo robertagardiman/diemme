@@ -25,7 +25,7 @@
 	<body <?php body_class(); ?>>
 		<div class="wrapper">
 			<header class="header clear" role="banner">
-			    <div class="logo"><span class="logo__mobile">d</span><span>iemme</span></div>
+			    <a href="/wp" class="logo"><span class="logo__mobile">d</span><span>iemme</span></a>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                 <div class="header__menu-trigger">
                     <span class="menu__line"></span>

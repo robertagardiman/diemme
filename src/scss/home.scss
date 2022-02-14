@@ -207,5 +207,13 @@
       }
     }
   }
+
+  @include mobile {
+    .home-content {
+      .home-content__servizi {
+        width: 100%;
+      }
+    }
+  }
 }
 

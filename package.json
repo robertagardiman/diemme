@@ -29,7 +29,6 @@
     "@babel/polyfill": "^7.11.5",
     "flatpickr": "^4.6.6",
     "flickity-as-nav-for": "^2.0.1",
-    "jquery": "^3.5.1",
-    "node-sass": "^5.0.0"
+    "jquery": "^3.5.1"
   }
 }
